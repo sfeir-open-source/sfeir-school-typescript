@@ -19,3 +19,11 @@ A [SFEIR School](https://www.sfeir.com/formation/school/)
 # Slides
 
 You can view the slides [here](https://docs.google.com/presentation/d/1gikoLGqjlL-wbQOcJsQB_CEs-DAa3KNcTuvqSpeaeiA/edit?usp=sharing).
+
+# Compiling manually TypeScript to JavaScript
+
+`npm run tsc -- file.ts`
+
+Exemple: `npm run tsc -- exercices/00-compiling-typescript.ts`
+
+It will create a file named file.js side of the file.ts.
