@@ -74,7 +74,7 @@ describe('TS interfaces', () => {
 
   it('can have readonly properties', () => {
     interface IPerson {
-      firstName: string;
+      readonly firstName: string;
     }
 
     var error: boolean = false;
@@ -98,7 +98,6 @@ describe('TS interfaces', () => {
     interface IPerson {
       firstName: string;
     }
-
     interface IContacts {
       [index: string]: IPerson;
     }

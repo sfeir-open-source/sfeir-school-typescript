@@ -5,6 +5,7 @@
     "preserveConstEnums": true,
     "pretty": true,
     "sourceMap": true,
+    "strict": true,
     "target": "ES2015"
   }
 }
