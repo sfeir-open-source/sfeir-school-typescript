@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "pretty": true,
+    "sourceMap": true,
+    "target": "ES2015"
+  }
+}
