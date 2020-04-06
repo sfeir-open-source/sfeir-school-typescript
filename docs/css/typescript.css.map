@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "typescript.css",
+	"sources": [
+		"../scss/typescript.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
