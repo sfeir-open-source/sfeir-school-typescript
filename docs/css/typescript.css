@@ -1,2 +1,7 @@
+.reveal .slides section[data-background].speaker-slide img[alt*=badge] {
+  top: 800px; }
+
+.reveal .slides section .big-size {
+  font-size: 3.77em; }
 
 /*# sourceMappingURL=typescript.css.map */
