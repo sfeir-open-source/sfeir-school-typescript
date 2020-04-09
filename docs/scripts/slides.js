@@ -16,10 +16,21 @@ function presentationSlides() {
   ]
 }
 
+function firstStepSlides() {
+  return [
+    'first-step/transition-slide.md',
+    'first-step/javascript-types.md',
+    'first-step/typescript-types.md',
+    'first-step/typescript-variable.md',
+    'first-step/typescript-object-function.md',
+    'first-step/typescript-function.md',
+  ]
+}
 function formation() {
   return [
     ...schoolSlides(),
     ...presentationSlides(),
+    ...firstStepSlides(),
   ].map(slidePath => {
     return { path: slidePath };
   });

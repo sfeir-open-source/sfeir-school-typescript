@@ -145,7 +145,10 @@ Notes:
 <!-- .slide: class="flex-row full-center" -->
 # L'apport de Typescript
 ![h-500](assets/images/school/presentation/typescript.png)
-![h-500](assets/images/school/presentation/javascript.png)
+<span class="big-size">==</span>
+![h-500](assets/images/school/presentation/javascript.png) + types - liberté? 
+
+
 Notes:
 - Typescript est un super set de javascript
 - Apporte du typages
