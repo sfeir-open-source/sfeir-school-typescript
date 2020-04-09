@@ -26,11 +26,21 @@ function firstStepSlides() {
     'first-step/typescript-function.md',
   ]
 }
+
+function advancedConceptsSlides() {
+  return [
+    'advanced-concepts/transition-slide.md',
+    'advanced-concepts/concept-class.md',
+    'advanced-concepts/typescript-es6.md',
+  ]
+}
+
 function formation() {
   return [
     ...schoolSlides(),
     ...presentationSlides(),
     ...firstStepSlides(),
+    ...advancedConceptsSlides(),
   ].map(slidePath => {
     return { path: slidePath };
   });
