@@ -35,12 +35,21 @@ function advancedConceptsSlides() {
   ]
 }
 
+function integrationSlides() {
+  return [
+    'integration/transition-slide.md',
+    'integration/module.md',
+    'integration/definition.md',
+  ]
+}
+
 function formation() {
   return [
     ...schoolSlides(),
     ...presentationSlides(),
     ...firstStepSlides(),
     ...advancedConceptsSlides(),
+    ...integrationSlides(),
   ].map(slidePath => {
     return { path: slidePath };
   });
