@@ -43,6 +43,20 @@ function integrationSlides() {
   ]
 }
 
+function experimentalSlides() {
+  return [
+    'experimental/transition-slide.md',
+    'experimental/decorators.md',
+  ]
+}
+
+function bonusSlides() {
+  return [
+    'bonus/transition-slide.md',
+    'bonus/bonus.md'
+  ]
+}
+
 function formation() {
   return [
     ...schoolSlides(),
@@ -50,6 +64,8 @@ function formation() {
     ...firstStepSlides(),
     ...advancedConceptsSlides(),
     ...integrationSlides(),
+    ...experimentalSlides(),
+    ...bonusSlides(),
   ].map(slidePath => {
     return { path: slidePath };
   });
