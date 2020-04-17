@@ -1,7 +1,7 @@
 <!-- .slide: class="speaker-slide blue" -->
 <br><br>
 ![speaker](assets/images/speaker/nicoF/nicoF.png)
-![company](assets/images/speaker/logo_sfeir_bleu_orange.png)
+![company](assets/images/speaker/logo-sfeir-blanc.png)
 ![badge](assets/images/speaker/nicoF/badgeMongo.png)
 
 <h2>Nicolas <span>Frizzarin</span></h2>

@@ -30,4 +30,9 @@
 .reveal .slides section .center {
   text-align: center; }
 
+.reveal .slides section .table-center {
+  position: absolute;
+  top: 25%;
+  margin: auto; }
+
 /*# sourceMappingURL=typescript.css.map */

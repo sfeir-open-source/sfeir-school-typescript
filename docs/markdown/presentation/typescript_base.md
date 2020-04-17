@@ -45,7 +45,7 @@ Notes:
         </tr>
     </tbody>
 </table>
-<!-- .element: class="full-center">
+<!-- .element: class="table-center" -->
 
 ##==##
 
@@ -82,7 +82,7 @@ Notes:
         </tr>
     </tbody>
 </table>
-<!-- .element: class="full-center">
+<!-- .element: class="table-center">
 
 ##==##
 
@@ -119,7 +119,7 @@ Notes:
         </tr>
     </tbody>
 </table>
-<!-- .element: class="full-center" -->
+<!-- .element: class="table-center" -->
 Notes:
 - Mentionner la poltitique d'intégrer TC39 stage3 specs
 
