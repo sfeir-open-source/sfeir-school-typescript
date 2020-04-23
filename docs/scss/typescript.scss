@@ -1,0 +1,34 @@
+@import './definition.scss';
+
+/**
+  - modify the top of icon to avoid the icon be just below the name of the speaker
+**/
+.reveal .slides section[data-background].speaker-slide img[alt*=badge] {
+  top: 800px
+}
+
+/**
+  - add a new class to display code correctly when there is a lot of code on the diapo
+**/
+.reveal .slides section.with-code pre.medium-code:not(.literal) code {
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+/**
+ - add extra helpers for all the slides
+**/
+.reveal .slides section {
+  .big-size {
+    font-size: 3.77em;
+  }
+  .center {
+    text-align: center;
+  }
+
+  .table-center {
+    position: absolute;
+    top: 25%;
+    margin: auto;
+  }
+}
