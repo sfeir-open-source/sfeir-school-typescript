@@ -176,4 +176,4 @@ interface IReadonlyNoteBook {
 ## Solution
 
 <br><br>
-<span class="full-center"><b>05-about-functions.correction.ts</b></span>
+<span class="full-center"><b>04-about-interfaces.correction.ts</b></span>
