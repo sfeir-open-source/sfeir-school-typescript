@@ -1,19 +1,25 @@
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide:-->
+
 # Typescript
+
 <div>
     <img alt="center" src="assets/images/school/presentation/microsoft.png" />
     <img alt="center h-350" src="assets/images/school/presentation/anders.jpg" />
 </div>
 <!-- .element class="flex-row full-center" -->
+
 Notes:
-- Anders Hejlsberg (principal créateur de C#)
-- surcouche de JS
-- transpilé en JS => lisible par tous les navigateurs
+
+-   Anders Hejlsberg (principal créateur de C#)
+-   surcouche de JS
+-   transpilé en JS => lisible par tous les navigateurs
 
 ##==##
 
 <!--.slide -->
+
 # La Première version de typescript
+
 <table>
     <thead>
         <tr>
@@ -50,7 +56,9 @@ Notes:
 ##==##
 
 <!--.slide -->
+
 # La Première version de typescript
+
 <table>
     <thead>
         <tr>
@@ -87,7 +95,9 @@ Notes:
 ##==##
 
 <!-- .slide -->
+
 # La deuxième version de typescript
+
 <table>
     <thead>
         <tr>
@@ -126,31 +136,34 @@ Notes:
 ##==##
 
 <!--.slide -->
-# Les 4 fausses rumeurs à propos de Typescript
-<br><br>
 
-- Typescript évite les fuites mémoire de Javascript<br><br>
-- Typescript a introduit des classes en Javascript<br><br>
-- Typescript polyfille es6<br><br>
-- Le Typescript c'est du C# qui compile en Javascript<br><br>
-- Le typage statique est de la dette technique
+# Les 4 fausses rumeurs à propos de Typescript
+
+-   Typescript évite les fuites mémoire de Javascript<br><br>
+-   Typescript a introduit des classes en Javascript<br><br>
+-   Typescript polyfille es6<br><br>
+-   Le Typescript c'est du C# qui compile en Javascript<br><br>
+-   Le typage statique est de la dette technique
+
 Notes:
-- add polyfill → ES6 compatibility table / typescript transpile les structures ES6, mais il faut ajouter core-js ou es6-shim pour utiliser la spec du language
-- fuite de mémoire indépendante de ts ou js
-- class introduites pas es2015 juste sucre syntaxique
-- dette tech ?
+
+-   add polyfill → ES6 compatibility table / typescript transpile les structures ES6, mais il faut ajouter core-js ou es6-shim pour utiliser la spec du language
+-   fuite de mémoire indépendante de ts ou js
+-   class introduites pas es2015 juste sucre syntaxique
+-   dette tech ?
 
 ##==##
 
 <!-- .slide: class="flex-row full-center" -->
+
 # L'apport de Typescript
+
 ![h-500](assets/images/school/presentation/typescript.png)
 <span class="big-size">==</span>
-![h-500](assets/images/school/presentation/javascript.png) + types - liberté? 
-
+![h-500](assets/images/school/presentation/javascript.png) + types - liberté?
 
 Notes:
-- Typescript est un super set de javascript
-- Apporte du typages
-- engendre moins de liberté ?
 
+-   Typescript est un super set de javascript
+-   Apporte du typages
+-   engendre moins de liberté ?

@@ -1,4 +1,5 @@
-<!-- .slide: class="speaker-slide blue" -->
+<!-- .slide: class="speaker-slide" -->
+
 <br><br>
 ![speaker](assets/images/speaker/nicoF/nicoF.png)
 ![company](assets/images/speaker/logo-sfeir-blanc.png)
@@ -6,10 +7,10 @@
 
 <h2>Nicolas <span>Frizzarin</span></h2>
 
-### Developer FullStack JS - TS
+### Dev FullStack JS/TS
+
 <!-- .element: class="icon-rule icon-first" -->
 
 ### @Nicooss54
-<!-- .element: class="icon-twitter icon-second" -->
 
-
+<!-- .element: class="icon-second" -->

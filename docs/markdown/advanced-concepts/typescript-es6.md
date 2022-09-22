@@ -1,28 +1,33 @@
 <!-- .slide: class="with-code inconsolata" -->
+
 # Typescript is ES6
-<br>
 
 ## Destructuring declarations
+
 <br>
 
 ```typescript
 let [myArrayValue] = [1];
 // myArrayValue === 1
 
-let {myobjectValue} = { myobjectValue: 1 };
+let { myobjectValue } = { myobjectValue: 1 };
 // myobjectValue === 1
 ```
+
 <!-- .element: class="big-code" -->
+
 Notes:
- - es6 katas: http://es6katas.org/
+
+-   es6 katas: http://es6katas.org/
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
+
 # Typescript is ES6
-<br>
 
 ## Destructuring assignments
+
 <br>
 
 ```typescript
@@ -34,15 +39,17 @@ let len: number;
 {length: len} = [1, 2, 3];
 // len === 3
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
+
 # Typescript is ES6
-<br>
 
 ## Destructuring parameters
+
 <br>
 
 ```typescript
@@ -55,23 +62,27 @@ function doSomething({repeat}: IOptions) {
 
 doSomething({ repeat: 5 });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
+
 # Exercice 7: destructuring
-## Exercice
-<br><br>
+
+## Lab
+
 <span class="center"><b>07-about-destructuring</b></span>
 <br>
 
-- Remplacer les <b>_</b> présents dans les specs afin de faire passer le transpilation et le test<br><br>
-- Le degré de nesting des propriétés et la transpilation risquent de vous poser problème dans certains cas
+-   Remplacer les <b>\_</b> présents dans les specs afin de faire passer le transpilation et le test<br><br>
+-   Le degré de nesting des propriétés et la transpilation risquent de vous poser problème dans certains cas
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="transition-bg-sfeir-3" -->
+
 # Exercice 7: destructuring
-## Solution
-<span class="full-center"><b>07-about-destructuring.correction.ts</b></span>
+
+## Soluce : **07-about-destructuring.correction.ts**

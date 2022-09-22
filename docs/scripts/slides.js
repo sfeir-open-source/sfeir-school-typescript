@@ -1,3 +1,5 @@
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+
 function schoolSlides() {
   return [
     'introduction/introduction.md',
@@ -5,15 +7,12 @@ function schoolSlides() {
     'speaker/nicoF.md',
     'speaker/anthonyP.md',
     'speaker/mathieuD.md',
-    'introduction/day-planning.md',
+    'introduction/day-planning.md'
   ];
-};
+}
 
 function presentationSlides() {
-  return [
-    'presentation/transition-slide.md',
-    'presentation/typescript_base.md',
-  ]
+  return ['presentation/transition-slide.md', 'presentation/typescript_base.md'];
 }
 
 function firstStepSlides() {
@@ -23,38 +22,28 @@ function firstStepSlides() {
     'first-step/typescript-types.md',
     'first-step/typescript-variable.md',
     'first-step/typescript-object-function.md',
-    'first-step/typescript-function.md',
-  ]
+    'first-step/typescript-function.md'
+  ];
 }
 
 function advancedConceptsSlides() {
   return [
     'advanced-concepts/transition-slide.md',
     'advanced-concepts/concept-class.md',
-    'advanced-concepts/typescript-es6.md',
-  ]
+    'advanced-concepts/typescript-es6.md'
+  ];
 }
 
 function integrationSlides() {
-  return [
-    'integration/transition-slide.md',
-    'integration/module.md',
-    'integration/definition.md',
-  ]
+  return ['integration/transition-slide.md', 'integration/module.md', 'integration/definition.md'];
 }
 
 function experimentalSlides() {
-  return [
-    'experimental/transition-slide.md',
-    'experimental/decorators.md',
-  ]
+  return ['experimental/transition-slide.md', 'experimental/decorators.md'];
 }
 
 function bonusSlides() {
-  return [
-    'bonus/transition-slide.md',
-    'bonus/bonus.md'
-  ]
+  return ['bonus/transition-slide.md', 'bonus/bonus.md'];
 }
 
 function formation() {
@@ -65,12 +54,10 @@ function formation() {
     ...advancedConceptsSlides(),
     ...integrationSlides(),
     ...experimentalSlides(),
-    ...bonusSlides(),
+    ...bonusSlides()
   ].map(slidePath => {
     return { path: slidePath };
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);

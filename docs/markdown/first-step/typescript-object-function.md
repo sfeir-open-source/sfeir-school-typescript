@@ -2,11 +2,7 @@
 
 # Objets et fonctions: interfaces
 
-<br>
-
 ## Principe - décrire la structure
-
-<br>
 
 ```typescript
 function printLabel(labelledObj: { label: string; size: number }) {
@@ -29,11 +25,7 @@ Notes:
 
 # Objets et fonctions: interfaces
 
-<br>
-
 ## Déclaration réutilisable
-
-<br>
 
 ```typescript
 interface ILabelledValue {
@@ -59,11 +51,7 @@ Notes:
 
 # Objets et fonctions: interfaces
 
-<br>
-
 ## Optional
-
-<br>
 
 ```typescript
 interface ISquareConfig {
@@ -80,11 +68,7 @@ interface ISquareConfig {
 
 # Objets et fonctions: interfaces
 
-<br>
-
 ## Readonly
-
-<br>
 
 ```typescript
 interface ISquareConfig {
@@ -97,15 +81,11 @@ interface ISquareConfig {
 
 ##==##
 
-<!-- .slide: class="with-code inconsolata" -->
+<!-- .slide: class="with-code inconsolata max-height" -->
 
 # objets et fonctions: interfaces
 
-<br>
-
-## Extendable (two options)
-
-<br>
+## Extendable (two options - v1)
 
 ```typescript
 interface IA1 {
@@ -115,7 +95,19 @@ interface IB extends IA1 {
     bprop: string;
 }
 var a: IB = { aprop: 'a', bprop: 'b' };
+```
 
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code inconsolata max-height" -->
+
+# objets et fonctions: interfaces
+
+## Extendable (two options - v2)
+
+```typescript
 interface IA2 {
     aprop: string;
 }
@@ -133,11 +125,7 @@ var b: IA2 = { aprop: 'a', bprop: 'b' };
 
 # objets et fonctions: interfaces
 
-<br>
-
 ## Maps
-
-<br>
 
 ```typescript
 type weekDay = 'Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa' | 'Su';
@@ -158,9 +146,8 @@ interface IReadonlyNoteBook {
 
 # Exercice 4: interfaces
 
-## Exercice
+## Lab
 
-<br><br>
 <span class="center"><b>04-about-interfaces</b></span>
 <br>
 
@@ -169,11 +156,8 @@ interface IReadonlyNoteBook {
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="transition-bg-sfeir-3" -->
 
 # Exercice 4: interfaces
 
-## Solution
-
-<br><br>
-<span class="full-center"><b>04-about-interfaces.correction.ts</b></span>
+## Soluce : **04-about-interfaces.correction.ts**

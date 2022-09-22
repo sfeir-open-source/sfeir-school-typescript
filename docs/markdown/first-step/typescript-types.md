@@ -1,6 +1,6 @@
-<!-- .slide: class="with-code incosolata full-center" -->
+<!-- .slide: class="with-code incosolata full-center max-height" -->
+
 # Premier pas: les types en Typescript
-<br>
 
 ```typescript
 const isDone: boolean = false;
@@ -13,15 +13,18 @@ const speed: [ number, string ] = [ 10, 'km/h' ]
 //enums
 enums Cars { Tesla = 1, Renault = 2, Mercedes = 4 }
 ```
+
 <!-- .element: class="big-code" -->
+
 Notes:
-- https://www.typescriptlang.org/docs/handbook/basic-types.html pour les types basiques
+
+-   https://www.typescriptlang.org/docs/handbook/basic-types.html pour les types basiques
 
 ##==##
 
-<!-- .slide: class="with-code inconsolata full-center" -->
+<!-- .slide: class="with-code inconsolata full-center max-height" -->
+
 # Premier pas: les types en Typescript
-<br>
 
 ```typescript
 // your best/worst friend
@@ -34,12 +37,15 @@ var mystery: undefined = undefined;
 //there is one more
 function neverReturns(): never { throw 'some error'; }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata full-center" -->
+
 # Premier pas: les types en Typescript
+
 <br>
 
 ```typescript
@@ -52,24 +58,27 @@ aString.lenght; // compile error!
 // or (excl. in .tsx)
 var aString = something as string;
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 2: commençons à typer
-## Exercice
-<br>
-<span class="center"><b>02-about-ts-type</b></span>
-<br><br>
 
-- Remplacer les <b>_</b> présents dans les specs afain de faire passer la <b>transpilation</b> et les tests<br><br>
-- Pensez aux valeurs par défaut des enums. Les tests ne pourrons passer qu'une fois que la transpilation se passe sans erreurs
+# Exercice 2: commençons à typer
+
+## Lab
+
+<span class="center"><b>02-about-ts-type</b></span>
+<br>
+
+-   Remplacer les <b>\_</b> présents dans les specs afain de faire passer la <b>transpilation</b> et les tests<br><br>
+-   Pensez aux valeurs par défaut des enums. Les tests ne pourrons passer qu'une fois que la transpilation se passe sans erreurs
 
 ##==##
 
-<!-- .slide: class="exercice"-->
-# Exercice 2: commençons à typer
-## Solution
-<span class="full-center"><b>02-about-ts-types.correction.ts</b></span> 
+<!-- .slide: class="transition-bg-sfeir-3"-->
 
+# Exercice 2: commençons à typer
+
+## Soluce : **02-about-ts-types.correction.ts**
