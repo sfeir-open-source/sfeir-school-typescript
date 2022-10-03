@@ -3928,21 +3928,30 @@ html.print-pdf .aria-status {
   margin-top: -90px;
   font-size: 1.15em;
 }
-.reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) table,
-.reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) table,
-.reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) table {
+.reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) table:not(.hljs-ln),
+.reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) table:not(.hljs-ln),
+.reveal
+  .slides
+  section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition'])
+  table:not(.hljs-ln) {
   width: 100%;
   background-color: #efefef;
 }
-.reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) table,
+.reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) table:not(.hljs-ln),
 .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) th,
-.reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) td,
-.reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) table,
+.reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) tdtable:not(.hljs-ln-line),
+.reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) table:not(.hljs-ln),
 .reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) th,
-.reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) td,
-.reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) table,
+.reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) tdtable:not(.hljs-ln-line),
+.reveal
+  .slides
+  section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition'])
+  table:not(.hljs-ln),
 .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) th,
-.reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) td {
+.reveal
+  .slides
+  section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition'])
+  tdtable:not(.hljs-ln-line) {
   border: thin solid white;
 }
 .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) thead,
@@ -4148,6 +4157,9 @@ html.print-pdf .aria-status {
   background-image: url(./images/logo-school-white-3.png);
   z-index: 1;
 }
+.reveal .backgrounds div.slide-background .slide-background-content:after {
+  background-image: url(./images/logo-school-dark-3.webp);
+}
 .reveal .backgrounds div.slide-background.speaker-slide .slide-background-content:after,
 .reveal .backgrounds div.slide-background.first-slide .slide-background-content:after,
 .reveal .backgrounds div.slide-background[class*='transition'] .slide-background-content:after,
@@ -4244,6 +4256,9 @@ html.print-pdf .aria-status {
   .slide-background-content:after {
   background-image: url(./images/logo-institute-white.png);
   z-index: 1;
+}
+.reveal .slides[data-theme-slides='conf'] ~ .backgrounds div.slide-background .slide-background-content:after {
+  display: none;
 }
 html.print-pdf .reveal .slides .pdf-page div.slide-background.quote-slide:before {
   content: '';
@@ -4405,6 +4420,14 @@ html.print-pdf
   .slide-background-content:after {
   background-image: url(./images/logo-institute-white.png);
 }
+html.print-pdf
+  .reveal
+  .slides[data-theme-slides='conf']
+  .pdf-page
+  div.slide-background
+  .slide-background-content:after {
+  display: none;
+}
 .reveal .slides section[data-background].first-slide {
   position: absolute;
   color: #fff;
@@ -4489,6 +4512,12 @@ html.print-pdf
   background-size: contain;
 }
 .reveal .slides[data-theme-slides='institute'] section[data-background].first-slide div.sfeir-logo {
+  display: none;
+}
+.reveal .slides[data-theme-slides='conf'] section[data-background].first-slide:before {
+  display: none;
+}
+.reveal .slides[data-theme-slides='conf'] section[data-background].first-slide div.sfeir-logo {
   display: none;
 }
 :root {

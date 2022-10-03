@@ -101,6 +101,8 @@ Enjoy!
 
 This theme use target for [RevealJS](https://revealjs.com/#/) so all you can do with RevealJS is available with theme.
 
+You can still use RevealJS API by importing `Reveal` object in `import { Reveal } from "../web_modules/sfeir-school-theme/sfeir-school-theme.mjs";`
+
 # Features
 
 -   Specifics slides management:
@@ -108,17 +110,17 @@ This theme use target for [RevealJS](https://revealjs.com/#/) so all you can do 
     -   Speaker Slide
     -   Transitions Slides
     -   Multiples backgrounds
--   Code Higlighting (sequential highlighting will come after)
-    -   Choice of Dark code or Light code
-    -   Choice of font
-    -   Progess Highlithing
--   Two columns layout
--   Somes helpers for images
--   Compatibility with feather icons
--   Easyer management of restitution slides.
--   Expose some custom properties corresponding to the theme.
--   As it's controlled by class, it's compatible with markdown syntax or html
--   Two theme mode available : institute or school
+    -   Code Higlighting (sequential highlighting will come after)
+        -   Choice of Dark code or Light code
+        -   Choice of font
+        -   Progess Highlithing
+    -   Two columns layout
+    -   Somes helpers for images
+    -   Compatibility with feather icons
+    -   Easyer management of restitution slides.
+    -   Expose some custom properties corresponding to the theme.
+    -   As it's controlled by class, it's compatible with markdown syntax or html
+    -   Three theme mode available : institute, school or conf
 
 ## Play with mode theme
 
@@ -126,14 +128,35 @@ Lot's of training given by SFEIR School program are also available with the paid
 
 In the html, where you could configure the restitution mode (see below for more details). You could define mode for displaying the slides :
 
-**Index.html Configuration**
+-   **[Institute](https://sfeir-school-theme.netlify.app/index-mode.html#/)**
+    -   _Index.html Configuration_
 
 ```html
 <body>
     <div class="reveal">
-        <div class="slides" data-theme-slides="institute">
-            ...
-        </div>
+        <div class="slides" data-theme-slides="institute">...</div>
+    </div>
+</body>
+```
+
+-   **[School](https://sfeir-school-theme.netlify.app/index.html#/)**
+    -   _Index.html Configuration_
+
+```html
+<body>
+    <div class="reveal">
+        <div class="slides" data-theme-slides="school">...</div>
+    </div>
+</body>
+```
+
+-   **[Conf](https://sfeir-school-theme.netlify.app/index-conf.html#/)**
+    -   _Index.html Configuration_
+
+```html
+<body>
+    <div class="reveal">
+        <div class="slides" data-theme-slides="conf">...</div>
     </div>
 </body>
 ```
@@ -145,6 +168,10 @@ Here is an example of first slide according to if you set mode to institute or n
 ### Institute mode :
 
 ![](./docs/images/first-slide-institute.png)
+
+### Conf mode :
+
+![](./docs/images/first-slide-conf.png)
 
 ### Normal mode (or school mode):
 
@@ -848,9 +875,7 @@ With this theme you can easily create content that is different between, what yo
 ```html
 <body>
     <div class="reveal">
-        <div class="slides" data-type-show="prez">
-            ...
-        </div>
+        <div class="slides" data-type-show="prez">...</div>
     </div>
 </body>
 ```
