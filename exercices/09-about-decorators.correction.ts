@@ -15,7 +15,7 @@ describe('about decorators', () => {
     }
   }
 
-  beforeEach(function() {
+  beforeEach(function () {
     calculator = new Calculator();
   });
 

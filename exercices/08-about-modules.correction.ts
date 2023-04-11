@@ -44,7 +44,7 @@ describe('node require() with es6 export', () => {
     expect(oldStyleImport).to.deep.eq({
       foo: 'foo',
       bar: 'bar',
-      default: "ceci est l'export par defaut 'façon typescript' !"
+      default: "ceci est l'export par defaut 'façon typescript' !",
     });
   });
 });

@@ -4,9 +4,9 @@ A [SFEIR School](https://www.sfeir.com/formation/school/)
 
 ## Installation
 
-- `git clone https://github.com/sfeir-open-source/sfeir-school-typescript.git`
-- `cd sfeir-school-typescript`
-- `npm install`
+-   `git clone https://github.com/sfeir-open-source/sfeir-school-typescript.git`
+-   `cd sfeir-school-typescript`
+-   `npm install`
 
 # Typescript
 

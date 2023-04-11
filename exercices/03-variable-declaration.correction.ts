@@ -34,7 +34,7 @@ describe('about var, let and const', () => {
     expect(sum).to.equal(6);
   });
 
-  it('should solve some async issues', done => {
+  it('should solve some async issues', (done) => {
     var varStack: number[] = [];
     var letStack: number[] = [];
 

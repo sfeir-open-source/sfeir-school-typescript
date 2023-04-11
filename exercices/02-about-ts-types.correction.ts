@@ -35,7 +35,7 @@ describe('TS types', () => {
   it('include enum types', () => {
     enum myFirstEnum {
       red,
-      blue = 2
+      blue = 2,
     }
 
     expect(myFirstEnum.red).to.equal(0);

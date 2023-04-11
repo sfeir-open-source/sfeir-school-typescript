@@ -41,14 +41,14 @@ describe('about destructuring objects', () => {
   it('should find variables properties', () => {
     const magic = { first: 23, second: 42 };
     const {
-      magic: { second }
+      magic: { second },
     } = { magic };
     expect(second).to.equal(42);
   });
 
   it('should mix object and array', () => {
     const {
-      z: [, x]
+      z: [, x],
     } = { z: [23, 42] };
     expect(x).to.equal(42);
   });
