@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "ignorePatterns": ["node_modules/**/*", "docs/**/*"],
+  "plugins": ["@typescript-eslint", "markdown", "prettier"],
+  "overrides": [
+    {
+      "files": ["exercices/*.ts", "exercices/*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "extends": [
+        "eslint:recommended",
+        "prettier",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "rules": {
+        "prettier/prettier": ["error"],
+        // trying not to change existing code
+        "@typescript-eslint/no-empty-function": ["off"],
+        "@typescript-eslint/no-inferrable-types": ["off"],
+        "@typescript-eslint/no-var-requires": ["off"],
+        "no-constant-condition": ["off"],
+        "no-var": ["off"],
+        "prefer-const": ["off"]
+      }
+    },
+    {
+      "files": ["*.md"],
+      "processor": "markdown/markdown",
+      "extends": ["plugin:markdown/recommended"],
+      "rules": { "prettier/prettier": ["error"] }
+    }
+  ]
+}

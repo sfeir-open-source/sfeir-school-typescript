@@ -2,7 +2,7 @@ import { expect } from 'chai';
 const __ = Symbol('replace me');
 type __ = never;
 describe('TS types', () => {
-  it('should be the same as in JavaScript for primitve types', () => {
+  it.skip('should be the same as in JavaScript for primitve types', () => {
     var aBoolean: boolean = true;
     var aString: __ = __;
     var aNumber: __ = __;
@@ -12,19 +12,19 @@ describe('TS types', () => {
     expect(aNumber).to.eq(42);
   });
 
-  it('should have a special notation for arrays', () => {
+  it.skip('should have a special notation for arrays', () => {
     var aList: __ = [__];
 
     expect(aList).to.deep.eq([1, 2, 3]);
   });
 
-  it('should allow for putting different things in an array', () => {
+  it.skip('should allow for putting different things in an array', () => {
     var aList: (__ | __)[] = __;
 
     expect(aList).to.deep.eq([1, '2']);
   });
 
-  it('should have a notation for tuples (fixed sized arrays)', () => {
+  it.skip('should have a notation for tuples (fixed sized arrays)', () => {
     var aTemperature: [__, __] = [__, __];
 
     // descructuring declaration - we'll cover this soon
@@ -33,17 +33,17 @@ describe('TS types', () => {
     expect(unit).to.equal('F');
   });
 
-  it('include enum types', () => {
+  it.skip('include enum types', () => {
     enum myFirstEnum {
       __,
-      __
+      __,
     }
 
     expect(myFirstEnum.red).to.equal(0);
     expect(myFirstEnum[2]).to.equal('blue');
   });
 
-  it('should help you with null and undefined', () => {
+  it.skip('should help you with null and undefined', () => {
     var nullable: string | __ = __;
     var undefinable: number | __ = __;
 
@@ -51,7 +51,7 @@ describe('TS types', () => {
     expect(undefinable).to.be.undefined;
   });
 
-  it('should allow for typing function arguments too', () => {
+  it.skip('should allow for typing function arguments too', () => {
     function sayHello(name: __) {
       return 'Hello '.concat(name);
     }

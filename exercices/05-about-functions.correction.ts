@@ -3,7 +3,7 @@ import { expect } from 'chai';
 describe('about typed functions', () => {
   it('should be typed values', () => {
     let sayHello: (name: string) => string;
-    sayHello = name => `Hello ${name}`;
+    sayHello = (name) => `Hello ${name}`;
 
     expect(sayHello('TypeScript')).to.eq('Hello TypeScript');
   });
@@ -23,7 +23,7 @@ describe('about typed functions', () => {
     expect(sayHello(undefined, 'World')).to.eq('Hello World');
   });
 
-  it('make sense with interfaces', done => {
+  it('make sense with interfaces', (done) => {
     interface IPromise {
       then(cb: (val: boolean) => void): void;
     }
@@ -31,10 +31,10 @@ describe('about typed functions', () => {
     const myResolvedPromise: IPromise = {
       then(callBack) {
         setImmediate(() => callBack(true));
-      }
+      },
     };
 
-    myResolvedPromise.then(val => {
+    myResolvedPromise.then((val) => {
       expect(val).to.be.true;
       done();
     });
@@ -51,7 +51,7 @@ describe('about typed functions', () => {
       name: 'Donald',
       greet(msg: string) {
         return () => `${this.name} says hello ${msg}`;
-      }
+      },
     };
 
     const donaldGreets = donald.greet('world');

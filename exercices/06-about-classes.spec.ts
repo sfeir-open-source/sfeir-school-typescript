@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 const __ = Symbol('replace me');
 describe('about classes', () => {
-  it('your first class', () => {
+  it.skip('your first class', () => {
     class SuperHero {
       __;
     }
@@ -10,7 +10,7 @@ describe('about classes', () => {
     expect(hero.talk()).to.eq('Hi my name is Bruce Wayne');
   });
 
-  it('you can use getter and setters', () => {
+  it.skip('you can use getter and setters', () => {
     class Person {
       __;
     }
@@ -21,7 +21,7 @@ describe('about classes', () => {
     expect(person.firstName).to.equal('Jane');
   });
 
-  it('implement an interface', () => {
+  it.skip('implement an interface', () => {
     interface IDeveloper {
       readonly favouriteLanguage: string;
     }
@@ -32,7 +32,7 @@ describe('about classes', () => {
     expect(developer.favouriteLanguage).to.equal('TypeScript');
   });
 
-  it('extend another class', () => {
+  it.skip('extend another class', () => {
     abstract class Citizen {
       constructor(protected name: string) {}
       abstract talk(): string;
@@ -55,7 +55,7 @@ describe('about classes', () => {
     expect(robin.talk()).to.equal('I fight against evil with Stick and my master is Batman');
   });
 
-  it('share methods like in pure JS', () => {
+  it.skip('share methods like in pure JS', () => {
     class Developer {
       constructor(private favouriteLanguage: string) {}
 

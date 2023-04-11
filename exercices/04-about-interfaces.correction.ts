@@ -2,9 +2,7 @@ import { expect } from 'chai';
 
 describe('TS interfaces', () => {
   it('should describe the shape of an object', () => {
-    var person: { firstName: string } = {
-      firstName: 'John'
-    };
+    var person: { firstName: string } = { firstName: 'John' };
     expect(person.firstName).to.equal('John');
   });
 
@@ -13,9 +11,7 @@ describe('TS interfaces', () => {
       lastName: string;
     }
 
-    var person: IPerson = {
-      lastName: 'Doe'
-    };
+    var person: IPerson = { lastName: 'Doe' };
     expect(person.lastName).to.equal('Doe');
   });
 
@@ -28,10 +24,7 @@ describe('TS interfaces', () => {
       name: string;
     }
 
-    var person: IPerson = {
-      gender: 'male',
-      name: 'Chuck'
-    };
+    var person: IPerson = { gender: 'male', name: 'Chuck' };
     expect(person.gender).to.equal('male');
     expect(person.name).to.equal('Chuck');
   });
@@ -45,10 +38,7 @@ describe('TS interfaces', () => {
       name: string;
     }
 
-    var person: INamedPerson = {
-      gender: 'other',
-      name: 'Conchita'
-    };
+    var person: INamedPerson = { gender: 'other', name: 'Conchita' };
 
     expect(person.gender).to.equal('other');
     expect(person.name).to.equal('Conchita');
@@ -60,9 +50,7 @@ describe('TS interfaces', () => {
       lastName?: string;
     }
 
-    var person: IPerson = {
-      firstName: 'John'
-    };
+    var person: IPerson = { firstName: 'John' };
 
     if (person.lastName) {
       person.lastName = person.lastName.toUpperCase();
@@ -81,7 +69,7 @@ describe('TS interfaces', () => {
     var person: IPerson = {
       get firstName() {
         return 'John';
-      }
+      },
     };
 
     try {
@@ -104,9 +92,9 @@ describe('TS interfaces', () => {
 
     var contacts: IContacts = {
       johnId: { firstName: 'John' },
-      janeId: { firstName: 'Jane' }
+      janeId: { firstName: 'Jane' },
     };
 
-    ['johnId', 'janeId'].forEach(id => expect(contacts[id].firstName).not.to.be.undefined);
+    ['johnId', 'janeId'].forEach((id) => expect(contacts[id].firstName).not.to.be.undefined);
   });
 });

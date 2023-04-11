@@ -2,25 +2,25 @@ import { expect } from 'chai';
 const __ = Symbol('replace me');
 type __ = never;
 describe('TS interfaces', () => {
-  it('should describe the shape of an object', () => {
+  it.skip('should describe the shape of an object', () => {
     var person: __ = {
-      __: __
+      __: __,
     };
     expect(person.firstName).to.equal('John');
   });
 
-  it('can be declared just as JS bindings', () => {
+  it.skip('can be declared just as JS bindings', () => {
     interface __ {
       __: __;
     }
 
     var person: IPerson = {
-      __: __
+      __: __,
     };
     expect(person.lastName).to.equal('Doe');
   });
 
-  it('should be extendable by simply redeclaring them', () => {
+  it.skip('should be extendable by simply redeclaring them', () => {
     interface IPerson {
       gender: 'male' | 'female';
     }
@@ -31,13 +31,13 @@ describe('TS interfaces', () => {
 
     var person: IPerson = {
       gender: 'male',
-      __: __
+      __: __,
     };
     expect(person.gender).to.equal('male');
     expect(person.name).to.equal('Chuck');
   });
 
-  it('should be extendable with the extends keyword', () => {
+  it.skip('should be extendable with the extends keyword', () => {
     interface IPerson {
       gender: 'male' | 'female' | 'other';
     }
@@ -48,21 +48,21 @@ describe('TS interfaces', () => {
 
     var person: INamedPerson = {
       gender: __,
-      name: __
+      name: __,
     };
 
     expect(person.gender).to.equal('other');
     expect(person.name).to.equal('Conchita');
   });
 
-  it('can have optional properties', () => {
+  it.skip('can have optional properties', () => {
     interface IPerson {
       firstName: string;
       lastName?: string;
     }
 
     var person: IPerson = {
-      firstName: __
+      firstName: __,
     };
 
     if (__) {
@@ -73,7 +73,7 @@ describe('TS interfaces', () => {
     expect(person.lastName).to.equal(undefined);
   });
 
-  it('can have readonly properties', () => {
+  it.skip('can have readonly properties', () => {
     interface IPerson {
       readonly firstName: string;
     }
@@ -82,7 +82,7 @@ describe('TS interfaces', () => {
     var person: IPerson = {
       get firstName() {
         return 'John';
-      }
+      },
     };
 
     // even if you pass the test, your ide should inform you of an error
@@ -97,7 +97,7 @@ describe('TS interfaces', () => {
     expect(person.firstName).to.equal(__);
   });
 
-  it('can describe maps', () => {
+  it.skip('can describe maps', () => {
     interface IPerson {
       firstName: string;
     }
@@ -107,9 +107,9 @@ describe('TS interfaces', () => {
 
     var contacts: IContacts = {
       johnId: { firstName: __ },
-      __: { __: 'Jane' }
+      __: { __: 'Jane' },
     };
 
-    ['johnId', 'janeId'].forEach(id => expect(contacts[id].firstName).not.to.be.undefined);
+    ['johnId', 'janeId'].forEach((id) => expect(contacts[id].firstName).not.to.be.undefined);
   });
 });
