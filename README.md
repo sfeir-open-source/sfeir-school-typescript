@@ -24,7 +24,7 @@ You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-
 
 `npx tsc file.ts`
 
-Exemple: `npx tsc exercices/00-compiling-typescript.ts`
+Example: `npx tsc exercices/00-compiling-typescript.ts`
 
 It will create a file named file.js side of the file.ts.
 
