@@ -65,7 +65,7 @@ function Person(firstName: string, lastName: string) {
   this.lastName = lastName;
 }
 
-Person.prototype.sayHi = function() {
+Person.prototype.sayHi = function () {
   return `Hello My Name is ${this.firstName} ${this.lastName}`;
 };
 ```

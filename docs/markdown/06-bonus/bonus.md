@@ -67,10 +67,10 @@ applyMixins(SmartObject, [Disposable, Activatable]);
 
 ```typescript
 function applyMixins(derivedCtor: any, baseCtors: any[]) {
-  baseCtors.forEach(baseCtor =>
+  baseCtors.forEach((baseCtor) =>
     Object.getOwnPropertyNames(baseCtor.prototype).forEach(
-      name => (derivedCtor.prototype[name] = baseCtor.prototype[name])
-    )
+      (name) => (derivedCtor.prototype[name] = baseCtor.prototype[name]),
+    ),
   );
 }
 ```

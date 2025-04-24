@@ -45,7 +45,7 @@ const adder: ICalc = {
   add: (x, y) => x + y,
   mult(x, y) {
     return x * y;
-  }
+  },
 };
 ```
 
@@ -73,7 +73,7 @@ interface FCombinator {
 }
 
 const adder: FCombinator = (x, y) => x + y;
-const mult: FCombinator = function(x, y) {
+const mult: FCombinator = function (x, y) {
   return x * y;
 };
 ```
@@ -258,7 +258,7 @@ const person = {
   name: 'Wolfgang',
   hello(who: string) {
     return `${this.name} says hello ${who}`;
-  }
+  },
 };
 // call the function with this set
 person.hello('world'); // => Wolfgang says hello world
