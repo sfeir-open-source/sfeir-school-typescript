@@ -6,6 +6,6 @@
     "pretty": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2015"
+    "target": "ES2016"
   }
 }

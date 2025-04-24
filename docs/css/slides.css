@@ -1,0 +1,32 @@
+.reveal .slides section .definition__truth {
+  display: block;
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+.reveal .slides section .definition__link {
+  font-size: 1em;
+  font-weight: 500;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='badge'] {
+  top: 800px;
+}
+.reveal .slides section .big-size {
+  font-size: 3.77em;
+}
+.reveal .slides section .center {
+  text-align: center;
+}
+.reveal .slides section .table-center {
+  position: absolute;
+  top: 25%;
+  margin: auto;
+}
+
+.reveal .slides section.with-code pre.big-code:not(.literal) code,
+.reveal .slides section.with-code-dark pre.big-code:not(.literal) code,
+.reveal .slides section.with-code-bg-dark pre.big-code:not(.literal) code {
+  line-height: 1.8em;
+}
+
+/*# sourceMappingURL=slides.css.map */

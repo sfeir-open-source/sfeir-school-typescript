@@ -1,21 +1,20 @@
 import { expect } from 'chai';
-const __ = Symbol('replace me');
-type __ = never;
+
 describe('TS interfaces', () => {
   it('should describe the shape of an object', () => {
-    var person: __ = {
-      __: __
+    var person: { firstName: string } = {
+      firstName: 'John'
     };
     expect(person.firstName).to.equal('John');
   });
 
   it('can be declared just as JS bindings', () => {
-    interface __ {
-      __: __;
+    interface IPerson {
+      lastName: string;
     }
 
     var person: IPerson = {
-      __: __
+      lastName: 'Doe'
     };
     expect(person.lastName).to.equal('Doe');
   });
@@ -25,13 +24,13 @@ describe('TS interfaces', () => {
       gender: 'male' | 'female';
     }
 
-    interface __ {
-      __: __;
+    interface IPerson {
+      name: string;
     }
 
     var person: IPerson = {
       gender: 'male',
-      __: __
+      name: 'Chuck'
     };
     expect(person.gender).to.equal('male');
     expect(person.name).to.equal('Chuck');
@@ -42,13 +41,13 @@ describe('TS interfaces', () => {
       gender: 'male' | 'female' | 'other';
     }
 
-    interface __ extends __ {
-      __: __;
+    interface INamedPerson extends IPerson {
+      name: string;
     }
 
     var person: INamedPerson = {
-      gender: __,
-      name: __
+      gender: 'other',
+      name: 'Conchita'
     };
 
     expect(person.gender).to.equal('other');
@@ -62,10 +61,10 @@ describe('TS interfaces', () => {
     }
 
     var person: IPerson = {
-      firstName: __
+      firstName: 'John'
     };
 
-    if (__) {
+    if (person.lastName) {
       person.lastName = person.lastName.toUpperCase();
     }
 
@@ -88,26 +87,26 @@ describe('TS interfaces', () => {
     // even if you pass the test, your ide should inform you of an error
     // remove the keyword to pass the typechecking test
     try {
-      person.firstName = 'Jane';
+      (person as any).firstName = 'Jane';
     } catch (e) {
       error = true;
     }
 
     expect(error).to.be.true;
-    expect(person.firstName).to.equal(__);
+    expect(person.firstName).to.equal('');
   });
 
   it('can describe maps', () => {
     interface IPerson {
       firstName: string;
     }
-    interface __ {
-      __: __;
+    interface IContacts {
+      [personId: string]: IPerson;
     }
 
     var contacts: IContacts = {
-      johnId: { firstName: __ },
-      __: { __: 'Jane' }
+      johnId: { firstName: 'John' },
+      janeId: { firstName: 'Jane' }
     };
 
     ['johnId', 'janeId'].forEach(id => expect(contacts[id].firstName).not.to.be.undefined);

@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "definition.css",
-	"sources": [
-		"../scss/definition.scss"
-	],
-	"names": [],
-	"mappings": "AAAA,AAEI,OAFG,CAAC,OAAO,CAAC,OAAO,CAElB,kBAAO,CAAC;EACP,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;EAChB,aAAa,EAAE,GAAG,GACnB;;AAPL,AAQI,OARG,CAAC,OAAO,CAAC,OAAO,CAQlB,iBAAM,CAAC;EACN,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG,GACjB"
-}

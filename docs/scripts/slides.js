@@ -1,63 +1,72 @@
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+
 function schoolSlides() {
+  const dir = '00-school';
   return [
-    'introduction/introduction.md',
-    'introduction/round-table.md',
-    'speaker/nicoF.md',
-    'speaker/anthonyP.md',
-    'speaker/mathieuD.md',
-    'introduction/day-planning.md',
+    `${dir}/00-TITLE.md`,
+    `${dir}/01-wifi.md`,
+    `${dir}/10-speaker-nfr.md`,
+    `${dir}/10-speaker-ape.md`,
+    `${dir}/11-tour-de-table.md`,
+    `${dir}/20-what-we-will-do.md`
   ];
-};
+}
 
 function presentationSlides() {
+  const dir = '01-presentation';
   return [
-    'presentation/transition-slide.md',
-    'presentation/typescript_base.md',
-  ]
+    `${dir}/transition-slide.md`, //
+    `${dir}/typescript_base.md` //
+  ];
 }
 
 function firstStepSlides() {
+  const dir = '02-first-step';
   return [
-    'first-step/transition-slide.md',
-    'first-step/javascript-types.md',
-    'first-step/typescript-types.md',
-    'first-step/typescript-variable.md',
-    'first-step/typescript-object-function.md',
-    'first-step/typescript-function.md',
-  ]
+    `${dir}/transition-slide.md`,
+    `${dir}/javascript-types.md`,
+    `${dir}/typescript-types.md`,
+    `${dir}/typescript-variable.md`,
+    `${dir}/typescript-object-function.md`,
+    `${dir}/typescript-function.md`
+  ];
 }
 
 function advancedConceptsSlides() {
+  const dir = '03-advanced-concepts';
   return [
-    'advanced-concepts/transition-slide.md',
-    'advanced-concepts/concept-class.md',
-    'advanced-concepts/typescript-es6.md',
-  ]
+    `${dir}/transition-slide.md`, //
+    `${dir}/concept-class.md`, //
+    `${dir}/typescript-es6.md` //
+  ];
 }
 
 function integrationSlides() {
+  const dir = '04-integration';
   return [
-    'integration/transition-slide.md',
-    'integration/module.md',
-    'integration/definition.md',
-  ]
+    `${dir}/transition-slide.md`, //
+    `${dir}/module.md`, //
+    `${dir}/definition.md` //
+  ];
 }
 
 function experimentalSlides() {
+  const dir = '05-experimental';
   return [
-    'experimental/transition-slide.md',
-    'experimental/decorators.md',
-  ]
+    `${dir}/transition-slide.md`, //
+    `${dir}/decorators.md` //
+  ];
 }
 
 function bonusSlides() {
+  const dir = '06-bonus';
   return [
-    'bonus/transition-slide.md',
-    'bonus/bonus.md'
-  ]
+    `${dir}/transition-slide.md`, //
+    `${dir}/bonus.md` //
+  ];
 }
 
-function formation() {
+export function formation() {
   return [
     ...schoolSlides(),
     ...presentationSlides(),
@@ -65,12 +74,10 @@ function formation() {
     ...advancedConceptsSlides(),
     ...integrationSlides(),
     ...experimentalSlides(),
-    ...bonusSlides(),
+    ...bonusSlides()
   ].map(slidePath => {
     return { path: slidePath };
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);

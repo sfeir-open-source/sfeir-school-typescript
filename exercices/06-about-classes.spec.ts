@@ -3,7 +3,11 @@ const __ = Symbol('replace me');
 describe('about classes', () => {
   it('your first class', () => {
     class SuperHero {
-      __;
+      constructor(private firstname: string, private lastname: string) {}
+
+      talk() {
+        return `Hi my name is ${this.firstname} ${this.lastname}`;
+      }
     }
 
     var hero = new SuperHero('Bruce', 'Wayne');
@@ -12,7 +16,15 @@ describe('about classes', () => {
 
   it('you can use getter and setters', () => {
     class Person {
-      __;
+      constructor(public firstName: string, public lastName: string) {}
+
+      get fullName(): string {
+        return `${this.firstName} ${this.lastName}`;
+      }
+
+      set fullName(newFullName: string) {
+        [this.firstName, this.lastName] = newFullName.split(' ');
+      }
     }
 
     var person = new Person('John', 'Doe');
@@ -26,7 +38,9 @@ describe('about classes', () => {
       readonly favouriteLanguage: string;
     }
 
-    class Developer implements IDeveloper {}
+    class Developer implements IDeveloper {
+      constructor(public favouriteLanguage: string) {}
+    }
 
     var developer: IDeveloper = new Developer('TypeScript');
     expect(developer.favouriteLanguage).to.equal('TypeScript');
@@ -47,7 +61,12 @@ describe('about classes', () => {
     }
 
     class Sidekick extends SuperHero {
-      __;
+      constructor(name: string, alias: string, ability: string, public master: SuperHero) {
+        super(name, alias, ability);
+      }
+      public talk() {
+        return super.talk() + ` and my master is ${this.master.alias}`;
+      }
     }
 
     var batman = new SuperHero('Bruce Wayne', 'Batman', 'Martial arts');
@@ -66,6 +85,6 @@ describe('about classes', () => {
 
     var developer = new Developer('JavaScript');
     // think about what this should be
-    expect(developer.sayHi.call(__)).to.eq('Hello my favourite language is TypeScript');
+    expect(developer.sayHi.call(new Developer('TypeScript'))).to.eq('Hello my favourite language is TypeScript');
   });
 });

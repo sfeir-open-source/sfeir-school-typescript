@@ -1,38 +1,37 @@
 import { expect } from 'chai';
-const __ = Symbol('replace me');
-type __ = never;
+
 describe('about typed functions', () => {
   it('should be typed values', () => {
-    let sayHello: __;
-    sayHello = name => __;
+    let sayHello: (name: string) => string;
+    sayHello = name => `Hello ${name}`;
 
     expect(sayHello('TypeScript')).to.eq('Hello TypeScript');
   });
 
   it('should accept optional arguments', () => {
-    function sayHello(name: string) {
+    function sayHello(name?: string) {
       //__
       return `Hello ${name || 'World'}`;
     }
 
-    expect(sayHello()).to.eq(__);
+    expect(sayHello()).to.eq('Hello World');
   });
 
   it('should work with default values', () => {
-    let sayHello: __;
+    let sayHello: (msg: string | undefined, name: string) => string;
     sayHello = (msg = 'Hello', name) => `${msg} ${name}`;
 
-    expect(sayHello(undefined, 'World')).to.eq(__);
+    expect(sayHello(undefined, 'World')).to.eq('Hello World');
   });
 
   it('make sense with interfaces', done => {
     interface IPromise {
-      __;
+      then(callback: (value: boolean) => void): void;
     }
 
     const myResolvedPromise: IPromise = {
       then(callBack) {
-        setImmediate(() => callBack(__));
+        setImmediate(() => callBack(true));
       }
     };
 
@@ -43,7 +42,7 @@ describe('about typed functions', () => {
   });
 
   it('should accept any number of parameters', () => {
-    let join = (separator: __, ...__: __[]) => elm.join(separator);
+    let join = (separator: string, ...elm: string[]) => elm.join(separator);
 
     expect(join(', ', 'Hello', 'TypeScript')).to.eq('Hello, TypeScript');
   });
@@ -52,7 +51,7 @@ describe('about typed functions', () => {
     const donald = {
       name: 'Donald',
       greet(msg: string) {
-        __;
+        return () => `${this.name} says hello ${msg}`;
       }
     };
 
