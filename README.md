@@ -24,6 +24,6 @@ You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-
 
 `npm run tsc -- file.ts`
 
-Exemple : `npm run tsc -- exercices/00-compiling-typescript.ts`
+Exemple : `npm run tsc -- steps/00-compiling-typescript/main.ts`
 
 It will create a file named file.js side of the file.ts.

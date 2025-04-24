@@ -65,18 +65,3 @@ function enumerable(value: boolean) {
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 9 : décorateurs
-
-## Lab
-
-<br><br>
-<span class="center"><b>09-about-decorators</b></span>
-<br>
-
-- Décorer la classe Calculator pour ajouter des logs quand le constructor est défini et quand la méthode double est appelée <br><br>
-- Les décorateurs doivent être importés du répertoire décorators

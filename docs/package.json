@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Sfeir School Typescript with revealJS",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "sass": "sass ./scss/slides.scss:./css/slides.css --source-map --watch",
     "sass-once": "sass ./scss/slides.scss:./css/slides.css --source-map",

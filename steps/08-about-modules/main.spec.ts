@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
 
-import { bar, default as default1, foo } from '../lib/monModule';
-import default2 from '../lib/monModule';
+import { bar, default as default1, foo } from '../common/monModule';
+import default2 from '../common/monModule';
 
-import * as star from '../lib/oldStyleExport';
-import asDefault from '../lib/oldStyleExport';
+import * as star from '../common/oldStyleExport';
+import asDefault from '../common/oldStyleExport';
 
 const __ = Symbol('replace me');
 
@@ -37,7 +37,7 @@ describe('node exports', () => {
 });
 
 describe('node require() with es6 export', () => {
-  const oldStyleImport = require('../lib/monModule');
+  const oldStyleImport = require('../common/monModule');
 
   it('should be imported as es6 import', () => {
     expect(oldStyleImport).to.deep.eq({

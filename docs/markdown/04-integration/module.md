@@ -152,20 +152,3 @@ export class LettersValidator {}
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 8 : modules
-
-## Lab
-
-<br><br>
-<span class="center"><b>08-about-modules</b></span>
-<br>
-
-- Remplacer les <b>\_</b> présents dans les specs afin de faire passer la transpilation et le test<br><br>
-- Pas de piège ici, regardez bien le contenu du répertoire module
-  Notes:
-- Live coding

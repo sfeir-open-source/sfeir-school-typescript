@@ -68,18 +68,3 @@ Notes:
 
 - LIVE CODING - show special case for function declarations (block scoped) - show function “hoisting”
 - let/const hoisting and Temporal Dead Zone
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 3 : var / let / const
-
-## Lab
-
-<br>
-<span class="center"><b>03-variable-declaration</b></span>
-<br><br>
-
-- Remplacer les <b>\_</b> présents dans les specs afin de faire passer la transpilation et les tests<br><br>
-- Faîtes attention à la portée du let et comment sont passées les variables en JavaScript

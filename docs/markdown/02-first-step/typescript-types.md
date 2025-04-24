@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code incosolata full-center" -->
+<!-- .slide: class="with-code full-center" -->
 
 # Premier pas : les types en Typescript
 
@@ -64,18 +64,3 @@ var aString = something as string;
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 2 : commençons à typer
-
-## Lab
-
-<br>
-<span class="center"><b>02-about-ts-type</b></span>
-<br><br>
-
-- Remplacer les <b>\_</b> présents dans les specs afain de faire passer la <b>transpilation</b> et les tests<br><br>
-- Pensez aux valeurs par défaut des enums. Les tests ne pourrons passer qu'une fois que la transpilation se passe sans erreurs

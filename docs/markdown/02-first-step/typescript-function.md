@@ -266,17 +266,3 @@ person.hello.call('Cyril', 'you'); // => Cyril says hello you
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 5 : fonctions
-
-## Lab
-
-<br><br>
-<span class="center"><b>05-about-functions</b></span>
-<br><br>
-
-- Remplacer les <b>\_</b> présents dans les specs afin de faire passer la transpilation et le test

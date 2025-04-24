@@ -151,18 +151,3 @@ interface IReadonlyNoteBook {
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 4 : interfaces
-
-## Lab
-
-<br><br>
-<span class="center"><b>04-about-interfaces</b></span>
-<br>
-
-- Remplacer les <b>\_</b> présents dans les specs afin de faire passer la transpilation et le test<br><br>
-- Les erreurs à la transpilation ne sont pas les mêmes qu'au runtime!!

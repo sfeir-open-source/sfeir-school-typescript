@@ -70,18 +70,3 @@ doSomething({ repeat: 5 });
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 7 : destructuring
-
-## Lab
-
-<br><br>
-<span class="center"><b>07-about-destructuring</b></span>
-<br>
-
-- Remplacer les <b>\_</b> présents dans les specs afin de faire passer le transpilation et le test<br><br>
-- Le degré de nesting des propriétés et la transpilation risquent de vous poser problème dans certains cas

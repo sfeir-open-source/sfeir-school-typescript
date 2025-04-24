@@ -138,18 +138,3 @@ class Animal extends LivingBeing {
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="exercice" -->
-
-# Exercice 6 : classes
-
-## Lab
-
-<br><br>
-<span class="center"><b>06-about-classes</b></span>
-<br>
-
-- Remplacer les <b>\_</b> présents dans les specs afin de faire passer la transpilation et le test <br><br>
-- Pensez à la chaîne de prototypes.

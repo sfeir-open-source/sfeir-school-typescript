@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { withDone } from '../lib/vitest-ext';
+import { withDone } from '../common/vitest-ext';
 
 describe('about typed functions', () => {
   it('should be typed values', () => {

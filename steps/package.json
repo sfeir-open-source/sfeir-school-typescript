@@ -2,7 +2,31 @@
   "name": "steps",
   "version": "1.0.0",
   "license": "MIT",
+  "steps": [
+    "00-compiling-typescript",
+    "00-compiling-typescript-solution",
+    "01-about-js-types",
+    "01-about-js-types-solution",
+    "02-about-ts-types",
+    "02-about-ts-types-solution",
+    "03-variable-declaration",
+    "03-variable-declaration-solution",
+    "04-about-interfaces",
+    "04-about-interfaces-solution",
+    "05-about-functions",
+    "05-about-functions-solution",
+    "06-about-classes",
+    "06-about-classes-solution",
+    "07-about-destructuring",
+    "07-about-destructuring-solution",
+    "08-about-modules",
+    "08-about-modules-solution",
+    "09-about-decorators",
+    "09-about-decorators-solution"
+  ],
   "scripts": {
+    "00-compiling-typescript": "tsc ./00-compiling-typescript/main.ts",
+    "00-compiling-typescript-solution": "tsc ./00-compiling-typescript-solution/main.ts",
     "01-about-js-types": "vitest ./01-about-js-types",
     "01-about-js-types-solution": "vitest ./01-about-js-types-solution",
     "02-about-ts-types": "vitest ./02-about-ts-types",
@@ -25,6 +49,7 @@
   },
   "private": true,
   "devDependencies": {
+    "@types/node": "^22.14.1",
     "typescript": "^5.8.3",
     "vitest": "^3.1.2"
   }

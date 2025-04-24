@@ -5,6 +5,8 @@ function schoolSlides() {
   return [
     `${dir}/00-TITLE.md`,
     `${dir}/01-wifi.md`,
+    `${dir}/02-repository.md`,
+    `${dir}/03-repository-lab.md`,
     `${dir}/10-speaker-nfr.md`,
     `${dir}/10-speaker-ape.md`,
     `${dir}/11-tour-de-table.md`,
@@ -25,10 +27,15 @@ function firstStepSlides() {
   return [
     `${dir}/transition-slide.md`,
     `${dir}/javascript-types.md`,
+    `${dir}/javascript-types-lab.md`,
     `${dir}/typescript-types.md`,
+    `${dir}/typescript-types-lab.md`,
     `${dir}/typescript-variable.md`,
+    `${dir}/typescript-variable-lab.md`,
     `${dir}/typescript-object-function.md`,
-    `${dir}/typescript-function.md`
+    `${dir}/typescript-object-function-lab.md`,
+    `${dir}/typescript-function.md`,
+    `${dir}/typescript-function-lab.md`
   ];
 }
 
@@ -37,7 +44,9 @@ function advancedConceptsSlides() {
   return [
     `${dir}/transition-slide.md`, //
     `${dir}/concept-class.md`, //
-    `${dir}/typescript-es6.md` //
+    `${dir}/concept-class-lab.md`, //
+    `${dir}/typescript-es6.md`, //
+    `${dir}/typescript-es6-lab.md` //
   ];
 }
 
@@ -46,6 +55,7 @@ function integrationSlides() {
   return [
     `${dir}/transition-slide.md`, //
     `${dir}/module.md`, //
+    `${dir}/module-lab.md`, //
     `${dir}/definition.md` //
   ];
 }
@@ -54,7 +64,8 @@ function experimentalSlides() {
   const dir = '05-experimental';
   return [
     `${dir}/transition-slide.md`, //
-    `${dir}/decorators.md` //
+    `${dir}/decorators.md`, //
+    `${dir}/decorators-lab.md` //
   ];
 }
 
@@ -66,7 +77,7 @@ function bonusSlides() {
   ];
 }
 
-export function formation() {
+function formation() {
   return [
     ...schoolSlides(),
     ...presentationSlides(),
