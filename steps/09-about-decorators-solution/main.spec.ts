@@ -1,4 +1,4 @@
-import { logConstructor, logMethod } from './lib/log';
+import { logConstructor, logMethod } from '../lib/log';
 import { expect } from 'chai';
 
 describe('about decorators', () => {

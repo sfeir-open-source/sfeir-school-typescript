@@ -1,0 +1,40 @@
+{
+  "name": "steps",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "01-about-js-types": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./01-about-js-types/main.spec.ts\" \"npm run tscConcurrently -- --watch ./01-about-js-types/main.spec.ts\"",
+    "02-about-ts-types": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./02-about-ts-types/main.spec.ts\" \"npm run tscConcurrently -- --watch ./02-about-ts-types/main.spec.ts\"",
+    "03-variable-declaration": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./03-variable-declaration/main.spec.ts\" \"npm run tscConcurrently -- --watch ./03-variable-declaration/main.spec.ts\"",
+    "04-about-interfaces": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./04-about-interfaces/main.spec.ts\" \"npm run tscConcurrently -- --watch ./04-about-interfaces/main.spec.ts\"",
+    "05-about-functions": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./05-about-functions/main.spec.ts\" \"npm run tscConcurrently -- --watch ./05-about-functions/main.spec.ts\"",
+    "06-about-classes": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./06-about-classes/main.spec.ts\" \"npm run tscConcurrently -- --watch ./06-about-classes/main.spec.ts\"",
+    "07-about-destructuring": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./07-about-destructuring/main.spec.ts\" \"npm run tscConcurrently -- --watch ./07-about-destructuring/main.spec.ts\"",
+    "08-about-modules": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./08-about-modules/main.spec.ts\" \"npm run tscConcurrently -- --watch ./08-about-modules/main.spec.ts\"",
+    "09-about-decorators": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./09-about-decorators/main.spec.ts\" \"npm run tscConcurrently -- --watch ./09-about-decorators/main.spec.ts\"",
+    "01-about-js-types-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./01-about-js-types-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./01-about-js-types-solution/main.spec.ts\"",
+    "02-about-ts-types-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./02-about-ts-types-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./02-about-ts-types-solution/main.spec.ts\"",
+    "03-variable-declaration-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./03-variable-declaration-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./03-variable-declaration-solution/main.spec.ts\"",
+    "04-about-interfaces-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./04-about-interfaces-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./04-about-interfaces-solution/main.spec.ts\"",
+    "05-about-functions-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./05-about-functions-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./05-about-functions-solution/main.spec.ts\"",
+    "06-about-classes-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./06-about-classes-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./06-about-classes-solution/main.spec.ts\"",
+    "07-about-destructuring-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./07-about-destructuring-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./07-about-destructuring-solution/main.spec.ts\"",
+    "08-about-modules-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./08-about-modules-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./08-about-modules-solution/main.spec.ts\"",
+    "09-about-decorators-solution": "concurrently --kill-others -n \"TEST,TYPINGS\" \"npm test -- --watch ./09-about-decorators-solution/main.spec.ts\" \"npm run tscConcurrently -- --watch ./09-about-decorators-solution/main.spec.ts\"",
+    "tscConcurrently": "tsc --noEmit",
+    "tsc": "tsc",
+    "test": "mocha --bail -r ts-node/register --watch-extensions ts,tsx"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^5.0.0",
+    "@types/node": "^12.12.14",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.1",
+    "mocha": "^5.0.5",
+    "ts-node": "^8.5.4",
+    "tslint": "latest",
+    "typescript": "^3.7.2"
+  }
+}

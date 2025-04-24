@@ -1,11 +1,11 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import { default as default1, foo, bar } from './lib/monModule';
-import default2 from './lib/monModule';
+import { bar, default as default1, foo } from '../lib/monModule';
+import default2 from '../lib/monModule';
 
-import * as star from './lib/oldStyleExport';
-import asDefault from './lib/oldStyleExport';
+import * as star from '../lib/oldStyleExport';
+import asDefault from '../lib/oldStyleExport';
 
 const __ = Symbol('replace me');
 
@@ -38,7 +38,7 @@ describe('node exports', () => {
 });
 
 describe('node require() with es6 export', () => {
-  const oldStyleImport = require('./lib/monModule');
+  const oldStyleImport = require('../lib/monModule');
 
   it('should be imported as es6 import', () => {
     expect(oldStyleImport).to.deep.eq({
