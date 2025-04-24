@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
 
 describe('about basic types', () => {
   it('you should know the type of true/false', () => {

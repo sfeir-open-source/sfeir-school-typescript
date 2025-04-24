@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
 
 describe('TS interfaces', () => {
   it('should describe the shape of an object', () => {

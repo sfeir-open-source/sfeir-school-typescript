@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
 
 describe('about destructuring arrays', () => {
   it('should extract value from array', () => {

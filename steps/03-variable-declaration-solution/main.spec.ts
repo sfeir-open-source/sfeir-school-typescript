@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
 
 describe('about var, let and const', () => {
   it('let should be available only in the block it is declared in', () => {

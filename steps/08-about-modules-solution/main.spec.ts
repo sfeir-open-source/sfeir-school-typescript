@@ -1,5 +1,4 @@
-import { expect } from 'chai';
-import { describe, it } from 'mocha';
+import { describe, expect, it } from 'vitest';
 
 import { bar, default as default1, foo } from '../lib/monModule';
 import default2 from '../lib/monModule';

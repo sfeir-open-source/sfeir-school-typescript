@@ -1,5 +1,5 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import { logConstructor, logMethod } from '../lib/log';
-import { expect } from 'chai';
 
 describe('about decorators', () => {
   var calculator: Calculator,

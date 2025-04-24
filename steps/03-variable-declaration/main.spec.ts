@@ -1,5 +1,8 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
+import { withDone } from '../lib/vitest-ext';
+
 const __ = Symbol('replace me');
+
 describe('about var, let and const', () => {
   it('let should be available only in the block it is declared in', () => {
     var myVar = 1;
@@ -34,24 +37,27 @@ describe('about var, let and const', () => {
     expect(sum).to.equal(__);
   });
 
-  it('should solve some async issues', done => {
-    var varStack: number[] = [];
-    var letStack: number[] = [];
+  it(
+    'should solve some async issues',
+    withDone(({ done }) => {
+      var varStack: number[] = [];
+      var letStack: number[] = [];
 
-    for (var forVar = 0; forVar < 3; forVar++) {
-      setImmediate(() => varStack.push(forVar));
-    }
+      for (var forVar = 0; forVar < 3; forVar++) {
+        setImmediate(() => varStack.push(forVar));
+      }
 
-    for (let forLet = 0; forLet < 3; forLet++) {
-      setImmediate(() => letStack.push(forLet));
-    }
+      for (let forLet = 0; forLet < 3; forLet++) {
+        setImmediate(() => letStack.push(forLet));
+      }
 
-    setImmediate(() => {
-      expect(varStack).to.deep.eq(__);
-      expect(letStack).to.deep.eq(__);
-      done();
-    });
-  });
+      setImmediate(() => {
+        expect(varStack).to.deep.eq(__);
+        expect(letStack).to.deep.eq(__);
+        done();
+      });
+    })
+  );
 
   it('should be constant references not values', () => {
     const myConstArray: number[] = [];

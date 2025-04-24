@@ -1,5 +1,7 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
+
 const __ = Symbol('replace me');
+
 describe('about classes', () => {
   it('your first class', () => {
     class SuperHero {

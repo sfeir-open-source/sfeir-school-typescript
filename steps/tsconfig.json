@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "experimentalDecorators": true,
+    "moduleResolution": "nodenext",
+    "module": "NodeNext",
     "removeComments": true,
     "preserveConstEnums": true,
     "pretty": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2016"
+    "target": "ES2024"
   }
 }

@@ -1,4 +1,5 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
+import { withDone } from '../lib/vitest-ext';
 
 describe('about typed functions', () => {
   it('should be typed values', () => {
@@ -23,22 +24,25 @@ describe('about typed functions', () => {
     expect(sayHello(undefined, 'World')).to.eq('Hello World');
   });
 
-  it('make sense with interfaces', done => {
-    interface IPromise {
-      then(cb: (val: boolean) => void): void;
-    }
-
-    const myResolvedPromise: IPromise = {
-      then(callBack) {
-        setImmediate(() => callBack(true));
+  it(
+    'make sense with interfaces',
+    withDone(({ done }) => {
+      interface IPromise {
+        then(cb: (val: boolean) => void): void;
       }
-    };
 
-    myResolvedPromise.then(val => {
-      expect(val).to.be.true;
-      done();
-    });
-  });
+      const myResolvedPromise: IPromise = {
+        then(callBack) {
+          setImmediate(() => callBack(true));
+        }
+      };
+
+      myResolvedPromise.then(val => {
+        expect(val).to.be.true;
+        done();
+      });
+    })
+  );
 
   it('should accept any number of parameters', () => {
     let join = (separator: string, ...elm: string[]) => elm.join(separator);

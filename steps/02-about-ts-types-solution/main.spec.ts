@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { describe, expect, it } from 'vitest';
 
 describe('TS types', () => {
   it('should be the same as in JavaScript for primitve types', () => {
